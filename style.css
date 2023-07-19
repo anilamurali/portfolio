@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 600;
+}
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display: flex;
+
+}
+nav ul li{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+nav ul li a{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+}
+span{
+    color: rgb(169, 0, 11);
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+}
+#home::before{
+    content: '';
+    position: absolute;
+    background-image: url(https://wallpaperaccess.com/full/1536294.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+.main{
+    border: 1px solid white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: -1;
+    box-shadow: 3px 4px 6px 7px gray;
+}
+.heading{
+    color: red;
+    text-align: center;
+    margin: 10px;
+    font-weight: 900;
+    font-size: 30px;
+}
+.heading:hover{
+    color: purple;
+    text-shadow: 3px  5px  6px rgb(54, 40, 40);
+}
+/* About Me */
+.pic{
+    display: flex;
+    height: 650px;
+
+}
+.pic p{
+    text-align: justify;
+   margin-left: 40px;
+   margin-right: 40px;
+   margin-top: 10px;
+    line-height: 2pc;
+}
+.pic img{
+    width: 350px;
+    height: auto;
+
+}
+.pic h3{
+    margin-top: 10px;
+    margin-left: 40px;
+    color: red;
+    text-decoration: underline;
+}
+.gallery{
+    margin-left: 170px;
+    justify-content: space-between;
+
+}
+.gallery img{
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+}
+.gallery img:hover{
+    border: 2px ridge brown;
+    box-shadow: 4px 3px 2px 3px brown;
+    width: 370px;
+    height: 270px;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-left: 110px;
+    height: 630px;
+}
+.box{
+    width: 300px;
+    height: 450px;
+    border: 2px ridge black;
+    margin: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to top,rgb(255, 170, 0) 50%,white 50% );
+    background-size: 100% 200%;
+    transition: 0.8s;
+}
+.box:hover{
+    background-position: left bottom;
+    border: none;
+    box-shadow: 3px 4px 3px  brown;
+    color: white;
+    
+
+}
+.box img{
+    width: 100%;
+
+}
+.box p{
+    margin: 10px;
+    text-align: justify;
+}
+.box h1{
+    color: red;
+margin: 10px    ;
+}
+.input{
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+
+}
+form{
+    
+    width: 400px;
+    margin-left: 550px;
+    margin-right: 100px;
+}
